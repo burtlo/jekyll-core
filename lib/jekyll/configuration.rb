@@ -115,7 +115,7 @@ module Jekyll
       when /\.y(a)?ml/
         SafeYAML.load_file(filename)
       else
-        raise ArgumentError, "No parser for '#{filename}' is available. Use a .toml or .y(a)ml file instead."
+        raise ArgumentError, "No parser for '#{filename}' is available. Use a .y(a)ml or .toml file instead."
       end
     end
 
